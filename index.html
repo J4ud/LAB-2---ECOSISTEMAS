@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posts</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="form">
+      <h2>Create Post</h2>
+      <form id="post-form">
+        <input type="number" id="user-id" placeholder="User ID" required>
+        <input type="text" id="title" placeholder="Title" required>
+        <textarea id="body" placeholder="content" required></textarea>
+        <div class="button-container">
+          <button type="submit">Create Post</button>
+        </div>
+      </form>
+  </div>
+
+  <div class="display">
+    <h1 class="post-title">Posts</h1>
+    <button id="fetch">Load Posts</button>
+    <div id="posts-container"></div>
+  </div>
+  
+
+  <script src="index.js"></script>
+</body>
+</html>
